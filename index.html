@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Yvonne Nafula Juma — Data Scientist & Software Engineer based in Nairobi, Kenya."/>
+  <meta property="og:title" content="Yvonne Nafula Juma | Data Scientist & Software Engineer"/>
+  <meta property="og:description" content="Portfolio of Yvonne Nafula Juma — Data Scientist & Software Engineer based in Nairobi, Kenya."/>
+  <meta property="og:type" content="website"/>
+  <title>Yvonne Nafula Juma — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Cabinet+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ====== NAV ====== -->
+  <nav id="navbar">
+    <div class="nav-logo">YNJ<span class="dot">.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="hero-inner">
+
+      <!-- LEFT: Text -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Open to opportunities · Nairobi, Kenya
+        </div>
+        <h1 class="hero-name">
+          Yvonne<br>
+          <span class="gradient-text">Nafula Juma</span>
+        </h1>
+        <p class="hero-title">
+          <span id="typedText"></span><span class="caret">|</span>
+        </p>
+        <p class="hero-desc">
+          Building data-driven solutions and robust software systems. From simple data to open-source projects — I turn complex problems into elegant code.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects ↓</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+          <a href="https://github.com/210Evana" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub ↗</a>
+        </div>
+        <div class="tech-stack-row">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">SQL</span>
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">Data Science</span>
+          <span class="tech-pill">ML</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Profile Image -->
+      <div class="hero-image-wrap">
+        <div class="image-ring-outer"></div>
+        <div class="image-ring-inner"></div>
+        <div class="hero-image-box">
+        
+          <!--<div class="photo-placeholder" id="photoPlaceholder">
+            <div class="placeholder-emoji">👩🏾‍💻</div>
+            <p class="placeholder-label">Your Photo Here</p>
+            <span class="placeholder-hint">Save as <code>profile.jpg</code></span>
+          </div>-->
+          <img src="profile.jpeg" alt="Yvonne Nafula Juma" class="hero-photo" id="heroPhoto" onerror="document.getElementById('photoPlaceholder').style.display='flex'; this.style.display='none';"/> -->
+        </div>
+
+        <!-- Floating badges -->
+        <div class="float-badge badge-top">
+          <span class="badge-dot"></span> Available for work
+        </div>
+        <div class="float-badge badge-bottom">
+          <span>💻</span> 2+ Projects Live
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about">
+    <div class="reveal">
+      <p class="section-label">// 01 — who i am</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm Yvonne Nafula Juma — a Data Scientist and Software Engineer currently based in Nairobi, Kenya. I combine sharp analytical thinking with engineering skills to build solutions that make a real-world difference.
+        </p>
+        <p>
+          I'm currently on attachment at <strong>Athi Water Works Development Agency</strong>, providing IT and ICT technical support — covering system maintenance, data management, and infrastructure support within one of Kenya's key water utilities.
+        </p>
+        <p>
+          I'm a final-year <strong>KCA University</strong> BScIT student graduating in July 2026, with open-source projects deployed across Vercel, Render, and Railway. I'm driven by curiosity, clean code, and the power of data.
+        </p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Live Deployed Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">Sep<br>'22</div>
+          <div class="stat-label">Started at Athi Water</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2026</div>
+          <div class="stat-label">KCA Graduation</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Cloud Platforms Used</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section id="experience">
+    <div class="reveal">
+      <p class="section-label">// 02 — where i've worked</p>
+      <h2 class="section-title">Work Experience</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Athi Water Works Development Agency</div>
+              <div class="exp-role">ICT Attaché — Technical Support</div>
+              <div class="exp-date">📅 September 2022 — Present · Nairobi, Kenya</div>
+            </div>
+            <div class="exp-badge">Current</div>
+          </div>
+          <div class="exp-desc">
+            Providing hands-on ICT and technical support within one of Kenya's major water sector agencies. Responsibilities include:
+          </div>
+          <ul class="exp-list">
+            <li>System support, maintenance and troubleshooting of ICT infrastructure</li>
+            <li>Data entry, management and organization of institutional records</li>
+            <li>Supporting network infrastructure and hardware operations</li>
+            <li>Assisting in software deployment and IT helpdesk operations</li>
+            <li>Applying computer science skills to support digital operations in a water utility environment</li>
+          </ul>
+          <div class="exp-tags">
+            <span>IT Support</span>
+            <span>Data Management</span>
+            <span>Networking</span>
+            <span>System Administration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ====== SKILLS ====== -->
+  <section id="skills">
+    <div class="reveal">
+      <p class="section-label">// 03 — what i work with</p>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-category">
+        <div class="skill-cat-icon">📊</div>
+        <div class="skill-cat-title">Data Science</div>
+        <div class="skill-tags">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Scikit-learn</span>
+          <span>Matplotlib</span>
+          <span>Seaborn</span>
+          <span>Machine Learning</span>
+          <span>Data Analysis</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">⚙️</div>
+        <div class="skill-cat-title">Software Engineering</div>
+        <div class="skill-tags">
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+          <span>REST APIs</span>
+          <span>Git &amp; GitHub</span>
+          <span>OOP</span>
+          <span>HTML/CSS</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">☁️</div>
+        <div class="skill-cat-title">Deployment &amp; Cloud</div>
+        <div class="skill-tags">
+          <span>Vercel</span>
+          <span>Render</span>
+          <span>Railway</span>
+          <span>Netlify</span>
+          <span>GitHub Pages</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">🛠️</div>
+        <div class="skill-cat-title">Tools &amp; IT</div>
+        <div class="skill-tags">
+          <span>VS Code</span>
+          <span>Jupyter</span>
+          <span>Linux</span>
+          <span>Excel</span>
+          <span>IT Support</span>
+          <span>Networking</span>
+          <span>System Admin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects">
+    <div class="reveal">
+      <p class="section-label">// 04 — what i've built</p>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid reveal">
+
+      <div class="project-card">
+        <div class="project-top-bar"></div>
+        <div class="project-header">
+          <div class="project-icon">🤲</div>
+          <div class="project-links">
+            <a href="https://github.com/210Evana" target="_blank" rel="noopener noreferrer" class="proj-link">GitHub ↗</a>
+            <a href="https://github.com/210Evana" target="_blank" rel="noopener noreferrer" class="proj-link live">Live ↗</a>
+          </div>
+        </div>
+        <div class="project-name">Handexa</div>
+        <div class="project-desc">
+          A software application built and deployed on Vercel and Render. Developed with clean architecture principles, focusing on usability and reliable performance in production.
+        </div>
+        <div class="project-deploy">
+          <span class="deploy-badge vercel">▲ Vercel</span>
+          <span class="deploy-badge render">◉ Render</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>REST API</span>
+          <span>Open Source</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top-bar"></div>
+        <div class="project-header">
+          <div class="project-icon">📈</div>
+          <div class="project-links">
+            <a href="https://github.com/210Evana" target="_blank" rel="noopener noreferrer" class="proj-link">GitHub ↗</a>
+            <a href="https://github.com/210Evana" target="_blank" rel="noopener noreferrer" class="proj-link live">Live ↗</a>
+          </div>
+        </div>
+        <div class="project-name">Sokometrics</div>
+        <div class="project-desc">
+          A market analytics and data metrics platform. Leverages data science techniques to extract and visualize insights. Deployed across three platforms for scalability and reliability.
+        </div>
+        <div class="project-deploy">
+          <span class="deploy-badge vercel">▲ Vercel</span>
+          <span class="deploy-badge render">◉ Render</span>
+          <span class="deploy-badge railway">🚂 Railway</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Data Science</span>
+          <span>Analytics</span>
+          <span>SQL</span>
+          <span>Open Source</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ====== EDUCATION ====== -->
+  <section id="education">
+    <div class="reveal">
+      <p class="section-label">// 05 — academic background</p>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-body">
+        <div class="edu-degree">Bachelor of Science in Information Technology (BScIT)</div>
+        <div class="edu-school">KCA University · Nairobi, Kenya</div>
+        <div class="edu-year">Expected Graduation: 2026</div>
+        <div class="edu-tags">
+          <span>Data Structures</span>
+          <span>Algorithms</span>
+          <span>Database Systems</span>
+          <span>Software Engineering</span>
+          <span>Machine Learning</span>
+          <span>Networking</span>
+        </div>
+      </div>
+      <div class="edu-status">
+        <div class="status-dot"></div>
+        <span>Ongoing</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="contact-section">
+    <div class="contact-grid">
+      <div class="contact-intro reveal">
+        <p class="section-label">// 06 — let's connect</p>
+        <h2 class="section-title">Get in Touch</h2>
+        <p>
+          I'm open to collaborations, data projects, software development roles, and exciting opportunities. Whether you have a challenge to solve or just want to connect — reach out!
+        </p>
+        <div class="availability-card">
+          <div class="av-dot"></div>
+          <div>
+            <div class="av-title">Available for Work</div>
+            <div class="av-sub">Internships · Freelance · Full-time</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-links reveal">
+        <a href="mailto:jumayvonne89@gmail.com" class="contact-link">
+          <div class="contact-link-icon">✉️</div>
+          <div>
+            <div class="contact-link-text">Email</div>
+            <div class="contact-link-sub">jumayvonne89@gmail.com</div>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+        <a href="tel:+254716947728" class="contact-link">
+          <div class="contact-link-icon">📱</div>
+          <div>
+            <div class="contact-link-text">Phone</div>
+            <div class="contact-link-sub">+254 716 947 728</div>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+        <a href="https://github.com/210Evana" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div class="contact-link-icon">💻</div>
+          <div>
+            <div class="contact-link-text">GitHub</div>
+            <div class="contact-link-sub">github.com/210Evana</div>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+        <a href="https://www.linkedin.com/in/yvonne-juma-21686b2a6" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div class="contact-link-icon">🔗</div>
+          <div>
+            <div class="contact-link-text">LinkedIn</div>
+            <div class="contact-link-sub">yvonne-juma-21686b2a6</div>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <span>© 2026 Yvonne Nafula Juma</span>
+    <span class="footer-center">Built with HTML · CSS · JavaScript</span>
+    <span>
+      <a href="https://github.com/210Evana" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/yvonne-juma-21686b2a6" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

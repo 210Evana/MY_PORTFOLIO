@@ -30,13 +30,8 @@ No frameworks. No npm. No build step needed.
 
 ---
 
-## 🚀 Deploy to Netlify (Free)
-
-1. Go to [netlify.com](https://netlify.com) → Sign up / Log in
-2. Click **"Add new site"** → **"Deploy manually"**
-3. Drag & drop the entire project folder onto the page
-4. Your site goes live instantly at a `*.netlify.app` URL
-5. Optionally set a custom domain in **Site settings → Domain management**
+## 🚀 ## Live Demo
+https://yvonnejumaportfolio.netlify.app/
 
 
 
